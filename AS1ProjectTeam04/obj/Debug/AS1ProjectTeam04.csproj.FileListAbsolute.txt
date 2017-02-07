@@ -1,8 +1,0 @@
-D:\Douglas\2017 Winter\clientserver\Assignment\AS1ProjectTeam04\AS1ProjectTeam04\bin\Debug\AS1ProjectTeam04.exe.config
-D:\Douglas\2017 Winter\clientserver\Assignment\AS1ProjectTeam04\AS1ProjectTeam04\bin\Debug\AS1ProjectTeam04.exe
-D:\Douglas\2017 Winter\clientserver\Assignment\AS1ProjectTeam04\AS1ProjectTeam04\bin\Debug\AS1ProjectTeam04.pdb
-D:\Douglas\2017 Winter\clientserver\Assignment\AS1ProjectTeam04\AS1ProjectTeam04\obj\Debug\AS1ProjectTeam04.csprojResolveAssemblyReference.cache
-D:\Douglas\2017 Winter\clientserver\Assignment\AS1ProjectTeam04\AS1ProjectTeam04\obj\Debug\AS1ProjectTeam04.Properties.Resources.resources
-D:\Douglas\2017 Winter\clientserver\Assignment\AS1ProjectTeam04\AS1ProjectTeam04\obj\Debug\AS1ProjectTeam04.csproj.GenerateResource.Cache
-D:\Douglas\2017 Winter\clientserver\Assignment\AS1ProjectTeam04\AS1ProjectTeam04\obj\Debug\AS1ProjectTeam04.exe
-D:\Douglas\2017 Winter\clientserver\Assignment\AS1ProjectTeam04\AS1ProjectTeam04\obj\Debug\AS1ProjectTeam04.pdb
