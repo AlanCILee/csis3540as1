@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AS1ProjectTeam04
 {
-    public partial class Form1 : Form
+    public partial class formHouse : Form
     {
-        public Form1()
+        public formHouse()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace AS1ProjectTeam04
 {
-    partial class Form1
+    partial class formHouse
     {
         /// <summary>
         /// Required designer variable.
