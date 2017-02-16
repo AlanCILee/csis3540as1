@@ -24,6 +24,7 @@ namespace AS1ProjectTeam04
         public void AddToGridView(DataGridView d)
         {
             d.Rows.Add(houseData);
+            //
         }
     }
 }
