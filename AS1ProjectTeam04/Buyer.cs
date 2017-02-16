@@ -8,13 +8,13 @@ namespace AS1ProjectTeam04
 {
     class Buyer
     {
-        public int MaxPrice { set { MaxPrice = value; } get { return MaxPrice; } }
-        public string HouseType { set { HouseType = value; } get { return HouseType; } }
-        public int Bedrooms { set { Bedrooms = value; } get { return Bedrooms; } }
+        public int MaxPrice { set; get; }
+        public string HouseType { set; get; } 
+        public int Bedrooms { set; get; }
 
         public Buyer(int maxPrice, string houseType, int bedrooms)
         {
-            MaxPrice = maxPrice;            
+            MaxPrice = maxPrice;
             HouseType = houseType;
             Bedrooms = bedrooms;
         }

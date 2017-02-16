@@ -25,8 +25,9 @@ namespace AS1ProjectTeam04
 
             if(openFileD.ShowDialog() == DialogResult.OK)
             {
-                readFile = File.OpenText(openFileD.FileName);
 
+                readFile = File.OpenText(openFileD.FileName);
+                Console.WriteLine(openFileD.FileName);
                 while (!readFile.EndOfStream)
                 {
                     string[] house = readFile.ReadLine().Split(',');
@@ -48,48 +49,68 @@ namespace AS1ProjectTeam04
                         orderby house.Price
                         select house;
 
-            //showToGrid(query, gridListings, lbCountListings, lbAvgListings);               
+            showToGrid(query, gridListings, lbCountListings, lbAvgListings);
         }
 
         private void btnFindHouses_Click(object sender, EventArgs e)
         {
-            string houseType;
+            string houseType ;
+            int maxPrice = int.MaxValue;
+            int bedrooms = 0;
 
-            //if(rbCondo.checked){
-            //    type = Condo;
-            //}else if(rbTownhouse.checked){
-            //    type = Townhouse;
-            //}else if(rbHouse.checked){
-            //    type = House;
-            //}
+            if (rbCondo.Checked)
+            {
+                houseType = "Condo";           
+            }
+            else if (rbTownhouse.Checked)
+            {
+                houseType = "TownHouse";
+            }
+            else
+            {
+                houseType = "House";     
+            }          
+                      
+            if(!tbMaxPrice.Text.Equals(""))
+                maxPrice = int.Parse(tbMaxPrice.Text);
+            if (!tbBedrooms.Text.Equals(""))
+                bedrooms = int.Parse(tbBedrooms.Text);
 
-            //int maxPrice = int.Parse(tbMaxPrice.Text);
-            //int bedrooms = int.Parse(tbBedrooms.Text);
-            //Buyer guest = new Buyer(maxPrice, houserType, bedrooms);
+            Buyer guest = new Buyer(maxPrice, houseType, bedrooms);
 
-            //IEnumerable<House> query = from house in houses
-            //                           where guest.MaxPrice <= house.Price
-            //                           where guest.HouseType == house.Type
-            //                           where guest.Bedrooms >= house.Bedrooms
-            //                           orderby house.Price
-            //                           select house;
+            IEnumerable<House> query = from house in houses
+                                        where guest.MaxPrice >= house.Price
+                                        where guest.HouseType == house.Type
+                                        where guest.Bedrooms <= house.Bedrooms
+                                        orderby house.Price
+                                        select house;
 
-            //showToGrid(query, gridResults, lbCoundResults, lbAvgResults);
-
+            showToGrid(query, gridResults, lbCoundResults, lbAvgResults);
         }
 
         private void showToGrid(IEnumerable<House> query, DataGridView grid, Label count, Label avg)
         {
             grid.Rows.Clear();
             grid.Refresh();
-            count.Text = query.Count().ToString("C");
-            avg.Text = query.Average(h => h.Price).ToString();
+            avg.Text = "";
 
-            foreach (House house in query)
+            int numOfItems = query.Count();
+            count.Text = numOfItems.ToString();
+
+            if(numOfItems > 0)
             {
-                house.AddToGridView(grid);
+                avg.Text = query.Average(h => h.Price).ToString("C");
+
+                foreach (House house in query)
+                {
+                    house.AddToGridView(grid);
+                }
             }
         }
-    }
 
+        private void lbCoundResults_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
