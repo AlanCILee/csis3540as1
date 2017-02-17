@@ -54,7 +54,7 @@ namespace AS1ProjectTeam04
 
         private void btnFindHouses_Click(object sender, EventArgs e)
         {
-            string houseType ;
+            string houseType ="Condo TownHouse House";
             int maxPrice = int.MaxValue;
             int bedrooms = 0;
 
@@ -66,7 +66,7 @@ namespace AS1ProjectTeam04
             {
                 houseType = "TownHouse";
             }
-            else
+            else if (rbHouse.Checked)
             {
                 houseType = "House";     
             }          
@@ -79,9 +79,9 @@ namespace AS1ProjectTeam04
             Buyer guest = new Buyer(maxPrice, houseType, bedrooms);
 
             IEnumerable<House> query = from house in houses
-                                        where guest.MaxPrice >= house.Price
-                                        where guest.HouseType == house.Type
-                                        where guest.Bedrooms <= house.Bedrooms
+                                        where guest.MaxPrice >= house.Price 
+                                        where guest.HouseType.Contains(house.Type)
+                                        where guest.Bedrooms <= house.Bedrooms  
                                         orderby house.Price
                                         select house;
 
@@ -106,11 +106,6 @@ namespace AS1ProjectTeam04
                     house.AddToGridView(grid);
                 }
             }
-        }
-
-        private void lbCoundResults_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

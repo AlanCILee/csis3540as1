@@ -28,6 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.btnGetListings = new System.Windows.Forms.Button();
             this.gridListings = new System.Windows.Forms.DataGridView();
@@ -101,7 +111,7 @@
             this.gridListings.Location = new System.Drawing.Point(183, 57);
             this.gridListings.Name = "gridListings";
             this.gridListings.ReadOnly = true;
-            this.gridListings.Size = new System.Drawing.Size(545, 210);
+            this.gridListings.Size = new System.Drawing.Size(562, 210);
             this.gridListings.TabIndex = 2;
             // 
             // labelCount
@@ -173,12 +183,10 @@
             // rbHouse
             // 
             this.rbHouse.AutoSize = true;
-            this.rbHouse.Checked = true;
             this.rbHouse.Location = new System.Drawing.Point(250, 390);
             this.rbHouse.Name = "rbHouse";
             this.rbHouse.Size = new System.Drawing.Size(56, 17);
             this.rbHouse.TabIndex = 10;
-            this.rbHouse.TabStop = true;
             this.rbHouse.Text = "House";
             this.rbHouse.UseVisualStyleBackColor = true;
             // 
@@ -261,7 +269,7 @@
             this.gridResults.Location = new System.Drawing.Point(183, 487);
             this.gridResults.Name = "gridResults";
             this.gridResults.ReadOnly = true;
-            this.gridResults.Size = new System.Drawing.Size(545, 210);
+            this.gridResults.Size = new System.Drawing.Size(562, 210);
             this.gridResults.TabIndex = 18;
             // 
             // label7
@@ -290,7 +298,6 @@
             this.lbCoundResults.Size = new System.Drawing.Size(100, 23);
             this.lbCoundResults.TabIndex = 21;
             this.lbCoundResults.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbCoundResults.Click += new System.EventHandler(this.lbCoundResults_Click);
             // 
             // lbAvgResults
             // 
@@ -304,6 +311,8 @@
             // houseCode
             // 
             this.houseCode.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.houseCode.DefaultCellStyle = dataGridViewCellStyle11;
             this.houseCode.HeaderText = "Code";
             this.houseCode.Name = "houseCode";
             this.houseCode.ReadOnly = true;
@@ -311,6 +320,8 @@
             // houseType
             // 
             this.houseType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.houseType.DefaultCellStyle = dataGridViewCellStyle12;
             this.houseType.HeaderText = "Type";
             this.houseType.Name = "houseType";
             this.houseType.ReadOnly = true;
@@ -318,6 +329,8 @@
             // neighborhood
             // 
             this.neighborhood.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.neighborhood.DefaultCellStyle = dataGridViewCellStyle13;
             this.neighborhood.HeaderText = "Neighborhood";
             this.neighborhood.Name = "neighborhood";
             this.neighborhood.ReadOnly = true;
@@ -325,6 +338,8 @@
             // price
             // 
             this.price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.price.DefaultCellStyle = dataGridViewCellStyle14;
             this.price.HeaderText = "Price";
             this.price.Name = "price";
             this.price.ReadOnly = true;
@@ -332,6 +347,8 @@
             // bedrooms
             // 
             this.bedrooms.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.bedrooms.DefaultCellStyle = dataGridViewCellStyle15;
             this.bedrooms.HeaderText = "BRs";
             this.bedrooms.Name = "bedrooms";
             this.bedrooms.ReadOnly = true;
@@ -339,6 +356,8 @@
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridViewTextBoxColumn1.HeaderText = "Code";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
@@ -346,6 +365,8 @@
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle17;
             this.dataGridViewTextBoxColumn2.HeaderText = "Type";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
@@ -353,6 +374,8 @@
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle18;
             this.dataGridViewTextBoxColumn3.HeaderText = "Neighborhood";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
@@ -360,6 +383,8 @@
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle19;
             this.dataGridViewTextBoxColumn4.HeaderText = "Price";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
@@ -367,6 +392,8 @@
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle20;
             this.dataGridViewTextBoxColumn5.HeaderText = "BRs";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
